@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +23,7 @@
     <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
     <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
-
+    <meta name="google" value="notranslate">    
 
     <style>
       .bd-placeholder-img {
@@ -46,12 +47,12 @@
   <body>
     <header>
         <nav class="navbar sticky-top d-flex  flex-column  flex-md-row align-items-center p-4 px-md-5">
-          <h5 class="my-0 mr-md-auto font-weight-normal">Road to the senior
-developer</h5>
+          <h5 class="my-0 mr-md-auto font-weight-normal">Road to the senior developer</h5>
             <div class="my-2 my-md-0 mr-md-3">
               <a class="p-2 text-dark" href="#">About me</a>
-              <a class="p-2 text-dark" href="#">Instagram</a>
-              <a class="p-2 text-dark" href="#">Blog</a>
+              <a class="p-2 text-dark" href="{% static 'My_resume.docx' %}">My resume</a>
+              <a class="p-2 text-dark" target="_blank" rel="noopener noreferrer" href="https://vk.com/id184099441">VK</a>
+              <a class="p-2 text-dark" href="{% url 'showblog' %}">Blog</a>
             </div> 
         </nav>
     </header>

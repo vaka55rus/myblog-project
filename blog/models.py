@@ -9,3 +9,6 @@ class Post(models.Model):
 	def get_summary(self):
 		return self.blog_title[:500]
 #поменять текст и тайтл, переименовать евент
+
+	def __str__(self):
+		return self.event_text
